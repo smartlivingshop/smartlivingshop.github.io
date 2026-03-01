@@ -1,0 +1,91 @@
+baseURL = "https://smartlivingshop.github.io/"
+languageCode = "ko-kr"
+title = "smartlivingshop 쇼핑 블로그"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+summaryLength = 35
+
+[pagination]
+pagerSize = 12
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup]
+	[markup.goldmark]
+		[markup.goldmark.renderer]
+			unsafe = true
+
+[minify]
+disableXML = false
+minifyOutput = true
+
+[sitemap]
+changefreq = "daily"
+priority = 0.7
+filename = "sitemap.xml"
+
+[permalinks]
+posts = "/posts/:slug/"
+
+[params]
+defaultTheme = "auto"
+disableThemeToggle = false
+ShowShareButtons = true
+ShowReadingTime = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowToc = true
+TocOpen = false
+env = "production"
+description = "스마트한 라이프스타일을 위한 디지털 가전 및 스마트홈 기기 쇼핑 블로그입니다. 최신 스마트 기기, IoT 가전, 편리한 생활가전 등 기술로 삶을 업그레이드할 제품을 매일 소개합니다"
+keywords = ["스마트홈", "생활가전추천", "IoT기기", "스마트기기", "디지털라이프"]
+images = ["/images/og-default.webp"]
+
+# Search engine verification (set only when needed)
+googleSiteVerification = ""
+naverSiteVerification = ""
+bingSiteVerification = ""
+yandexSiteVerification = ""
+
+[params.homeInfoParams]
+Title = "기술로 더 편리한 일상을, 스마트리빙샵 가전 큐레이션"
+Content = "기술의 힘으로 더 스마트한 일상을 만들고 싶으신가요? 스마트리빙샵에서는 생활을 더욱 편리하게 바꿔주는 최신 스마트홈 기기와 생활가전을 매일 업데이트합니다. 스마트 조명부터 자동화 가전, 최신 IoT 기기까지 당신의 라이프스타일을 한 단계 업그레이드해줄 제품을 만나보세요."
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 2
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 5
+
+[[menu.main]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 10
+
+[[menu.main]]
+identifier = "categories"
+name = "Categories"
+url = "/categories/"
+weight = 20
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 30
