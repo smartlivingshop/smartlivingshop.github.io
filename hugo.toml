@@ -48,8 +48,8 @@ keywords = ["스마트홈", "생활가전추천", "IoT기기", "스마트기기"
 images = ["/images/og-default.webp"]
 
 # Search engine verification (set only when needed)
-googleSiteVerification = ""
-naverSiteVerification = ""
+googleSiteVerification = "wYI691jLJJcCGDUHEKLHiMCiG6RGFSbe9-rfyCSjioQ"
+naverSiteVerification = "dde9550fd6f0cd9950226efe0793135c665a3311"
 bingSiteVerification = ""
 yandexSiteVerification = ""
 
